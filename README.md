@@ -8,6 +8,9 @@ It also shows you the number of items and the percentage of items you have packe
 1- React js : A JavaScript library for building user interfaces.
 2- css
 
+## How it works 
+write in terminal : npm start run
+
 ## Demo
 See the live demo of the Wild-Oasis Quiz App: https://travel-list-ahmed.netlify.app/
 
