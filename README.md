@@ -12,7 +12,7 @@ It also shows you the number of items and the percentage of items you have packe
 write in terminal : npm start run
 
 ## Demo
-See the live demo of the Wild-Oasis Quiz App: https://travel-list-ahmed.netlify.app/
+See the live demo of the Wild-Oasis Quiz App: (Demo link)[https://travel-list-ahmed.netlify.app/]
 
 ## Contact
 If you have any questions or want to get in touch, you can find me on LinkedIn: https://www.linkedin.com/in/ahmed-mosad-5ab36b285/
