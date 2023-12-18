@@ -1,18 +1,19 @@
-function Item({ item, DeleteItems, handelcheck }) {
+function ListItem({ item, checkbox, deleteItem }) {
   return (
     <li>
       <span>
         <input
           type="checkbox"
           value={item.packed}
-          onChange={() => handelcheck(item.id)}
+          onChange={() => checkbox(item.id)}
         />
       </span>
       <span style={item.packed ? { textDecoration: "line-through" } : {}}>
         {item.quantity} {item.description}
       </span>
-      <button onClick={() => DeleteItems(item.id)}>❌</button>
+      <button onClick={() => deleteItem(item.id)}>❌</button>
     </li>
   );
 }
-export default Item;
+
+export default ListItem;

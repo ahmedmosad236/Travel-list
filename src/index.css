@@ -4,7 +4,7 @@ const initialItems = [
   { id: 2, description: "Socks", quantity: 12, packed: false },
 ];
 */
-
+/*
 @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap");
 
 * {
@@ -135,5 +135,140 @@ input[type="checkbox"] {
   background-color: #76c7ad;
   text-align: center;
   font-weight: 700;
+  padding: 3.2rem 0;
+} 
+*/
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2.4rem;
+  font-family: sans-serif;
+  color: #5a3e2b;
+  font-family: "Quicksand";
+  font-weight: 500;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+}
+
+h1 {
+  font-size: 8rem;
+  font-family: "Monoton";
+  text-align: center;
+  background-color: #f4a226;
+  font-weight: 400;
+  letter-spacing: -5px;
+  text-transform: uppercase;
+  padding: 2.4rem 0;
+  word-spacing: 30px;
+}
+
+h3 {
+  font-size: 2.4rem;
+  margin-right: 1.6rem;
+}
+
+.add-form {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  padding: 2.8rem 0;
+  background-color: #e5771f;
+  justify-content: center;
+}
+select,
+input,
+button {
+  font-size: 1.8rem;
+  font-family: inherit;
+  font-weight: 700;
+  padding: 1.2rem 3.2rem;
+  background-color: #ffebb3;
+  border: none;
+  border-radius: 10rem;
+  cursor: pointer;
+  color: #5a3e2b;
+}
+
+.add-btn {
+  background-color: #76c7ad;
+}
+
+.packinglist {
+  background-color: #5a3e2b;
+  color: #ffebb3;
+  padding: 4rem 0;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.packinglist ul {
+  list-style: none;
+  width: 80%;
+  overflow: scroll;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.2rem;
+  justify-content: center;
+  align-content: start;
+}
+.packinglist li {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  height: 2rem;
+  width: 2rem;
+  accent-color: #e5771f;
+}
+
+.packinglist li button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  padding: 0.8rem;
+  transform: translateY(2px);
+}
+
+.actions {
+  display: flex;
+  gap: 1.4rem;
+  margin-bottom: 4rem;
+}
+
+.actions select,
+.actions button {
+  font-size: 1.4rem;
+  padding: 0.8rem 2.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+p {
+  background-color: #76c7ad;
+  font-weight: 700;
+  text-align: center;
   padding: 3.2rem 0;
 }
