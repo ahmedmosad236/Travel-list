@@ -1,6 +1,7 @@
 function States({ items }) {
   const pack = items.filter((item) => item.packed).length;
   const precentage = (pack / items.length) * 100;
+  const precentageFixed = precentage.toFixed(2);
   if (!items.length)
     return (
       <p>
@@ -12,7 +13,7 @@ function States({ items }) {
     <p>
       {precentage === 100
         ? "You got everything! Ready to go ✈️"
-        : `💼 You have ${items.length} items on your list, and you already packed ${pack} (${precentage}%)`}
+        : `💼 You have ${items.length} items on your list, and you already packed ${pack} (${precentageFixed}%)`}
     </p>
   );
 }
